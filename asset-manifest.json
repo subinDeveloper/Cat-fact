@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//subinDeveloper.github.oi/Cat-fact/static/css/main.3bdedde6.css",
+    "main.js": "/https//subinDeveloper.github.oi/Cat-fact/static/js/main.329411fe.js",
+    "index.html": "/https//subinDeveloper.github.oi/Cat-fact/index.html",
+    "main.3bdedde6.css.map": "/https//subinDeveloper.github.oi/Cat-fact/static/css/main.3bdedde6.css.map",
+    "main.329411fe.js.map": "/https//subinDeveloper.github.oi/Cat-fact/static/js/main.329411fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bdedde6.css",
+    "static/js/main.329411fe.js"
+  ]
+}
