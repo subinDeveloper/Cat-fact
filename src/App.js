@@ -14,7 +14,7 @@ setCatFact (data.fact)
   },[])
   
   return (
-    <div className="flex justify-center h-screen flex-col items-center gap-4 text-2xl px-4 bg-black">
+    <div className="flex justify-center h-screen flex-col items-center gap-10 text-2xl px-24  bg-black">
       <button onClick={fetchData} className="px-16 py-4 bg-yellow-400 ">Genarat cat fact</button>
       <h1 className="text-white">{catfact}</h1>
     </div>
