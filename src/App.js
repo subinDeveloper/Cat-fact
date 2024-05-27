@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState,useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  const [catfact,setCatFact] = useState("")
+
+  const fetchData = async () =>{
+const {data} = await axios.get ("https://catfact.ninja/fact") 
+// console.log(data.fact);
+setCatFact (data.fact)
+  }
+  useEffect(() => {
+    fetchData()
+  },[])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center h-screen flex-col items-center gap-4 text-2xl px-4 bg-black">
+      <button onClick={fetchData} className="px-16 py-4 bg-yellow-400 ">Genarat cat fact</button>
+      <h1 className="text-white">{catfact}</h1>
     </div>
   );
 }
