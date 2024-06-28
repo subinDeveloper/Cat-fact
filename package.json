@@ -1,6 +1,6 @@
 {
   "name": "03_catfact",
-  "homepage":"https//subinDeveloper.github.io/Cat-fact",
+  "homepage":"https://subinDeveloper.github.io/Cat-fact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
